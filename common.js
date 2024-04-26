@@ -75,7 +75,7 @@ common.AirPlane = function (On) {
   
   }
   common.Press = function (view) {
-    log(arguments.callee.name + '开始')
+    log(arguments.callee.name + 'Start')
     log(view)
     if (view) {
       var x = view.bounds().centerX()
