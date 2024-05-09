@@ -36,11 +36,13 @@ else if (Month==11){
     var MonthText = "Nov";}
 else if (Month==12){
     var MonthText = "Dec";}
+//lấy ngày tháng hôm nay để tìm text 
 var dateObj = new Date(Date.now());
 var month1 = dateObj.toString().split(' ')[1];
 var date1 = ('0' + dateObj.getDate()).slice(-2);
 var year1 = dateObj.getFullYear();
 year1 = year1 -1 ;
+
 text(month1).setText(MonthText)
 text(date1).setText(Day);
 text(year1).setText(Year);
